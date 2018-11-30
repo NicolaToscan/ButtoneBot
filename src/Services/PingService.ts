@@ -1,13 +1,10 @@
-import MessageRequest from "../Models/MessageRequest";
-import { Client } from "discord.io";
+import { Client, Message } from "discord.js";
 
 export class PingService {
 
-    public static Ping(bot: Client, req: MessageRequest): void {
-        bot.sendMessage({
-            to: req.ChannelID,
-            message: 'PongPongCiao'
-        });
+    public static Ping(bot: Client, msg: Message): void {
+        msg.channel.send("Pong");
+
     }
 
 }
