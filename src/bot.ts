@@ -26,4 +26,4 @@ bot.on('message', (message: Message) => {
     Router.MessageRouter(cmd, args, bot, message);
 });
 
-bot.login("NTE3OTY2MTQ4NzEzNTc4NTA2.DuJ7eA.gTcLgg8nM1vLSbm4oC6VkTni9hY")
+bot.login("BOT-TOKEN")
